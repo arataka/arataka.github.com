@@ -5,6 +5,11 @@ title: google-diff-match-patchを使って文章の差分を単語単位でと�
 
 # {{ page.title }} #
 
+[![oogle-diff-match-patch by takafumi_a, on Flickr][fig_img]][fig_link]
+
+[fig_img]: http://farm6.static.flickr.com/5026/5584640439_08e2ded198_z.jpg
+[fig_link]: http://www.flickr.com/photos/arataka/5584640439/
+
 ...と言っても実は
 [google-diff-match-patch](http://code.google.com/p/google-diff-match-patch/)
 っていうライブラリを使えば簡単にできるって話で、そのデモサイト:
