@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MercurialやGitのコミット頻度などを可視化するスクリプト書いてみた
+title: MercurialやGitのコミット頻度などを可視化するPythonスクリプトを書いてみた
 ---
 
 # {{ page.title }} #
@@ -94,9 +94,9 @@ git log --format='%at' | datehist.py -t `git rev-parse --show-toplevel`
 
 ## datehist.py ##
 
-最新版は
+何か変更あれば，最新版は
 [tkf's gist: 913543 — Gist](https://gist.github.com/913543)
-にある(かも)．
+にあげときます．
 
 {% highlight python %}
 #!/usr/bin/env python
