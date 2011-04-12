@@ -91,6 +91,13 @@ git log --format='%at' | datehist.py -t `git rev-parse --show-toplevel`
 そうすればwebアプリ的な感じにも出きるよね．
 誰かやってくれないかなあ（ぉぃ
 
+* 追記 (2011-04-12)
+
+  - Mercurialだと無理みたい:  
+    [4.23. How can I do a "hg log" of a remote repository? - FAQ - Mercurial](http://mercurial.selenic.com/wiki/FAQ#FAQ.2BAC8-CommonProblems.How_can_I_do_a_.22hg_log.22_of_a_remote_repository.3F)
+  - Gitも無理そう:  
+    [git - git log of remote repositories.](http://git.661346.n2.nabble.com/git-log-of-remote-repositories-td4899042.html)
+
 
 ## datehist.py ##
 
