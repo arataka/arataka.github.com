@@ -1,1 +1,4 @@
 pygments: true
+
+maruku:
+  use_tex: true
