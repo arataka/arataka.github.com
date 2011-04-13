@@ -5,30 +5,49 @@ title: Anything.elライクなCUIのzaw.zshやcanythingをMendeleyやgistyやz(�
 
 # {{ page.title }} #
 
-[![zaw.zsh で Mendely で管理している論文PDFを選んでいる様子][
-fig_img_1]][fig_link_1]
+こんなの↓をやる設定です
+(zaw.zsh で Mendely で管理している論文PDFを選んでいる様子):
+
+[![zaw-mendeley.gif][fig_img_1]][fig_link_1]
 
 [fig_img_1]: https://lh5.googleusercontent.com/_SAwQBQ7QF-E/TaXBwp6tnKI/AAAAAAAAAZw/D4aXfeWLKKg/s800/zaw-mendeley.gif
 [fig_link_1]: https://picasaweb.google.com/lh/photo/j39yVxLpdSRnq_vXG17k8w?feat=embedwebsite
 
-シェル環境で使える anything.el ライクな環境はふたつ(もっとあるかも?)ある:
+シェル環境で使える anything.el ライクな環境は
+zaw.zsh と canything のふたつがある (もっとあるかも?)。
 
-1. zaw.zsh
+## zaw.zsh ##
 
-   - [zsh でも anything.el っぽいの - memo](http://u7fa9.org/memo/HEAD/archives/2011-02/2011-02-22_1.rst)
-   - [nakamuray/zaw - GitHub](https://github.com/nakamuray/zaw)
-   - [zshのanything.elやunite.vimっぽい機能を実現するzaw.zshの簡単な紹介と、予めsourceを指定したキーバインドを設定する方法 - kei_qメモ](http://d.hatena.ne.jp/kei_q/20110309/1299681144)
-   - [zaw.zshでgit show-branchの出力を眺めつつコミットを選択したい。 - hchbaw記](http://d.hatena.ne.jp/hchbaw/20110302/1299072457)
-   - zsh の魔術(ウィジェット)なのでカスタマイズするのにとっつきにくかった
+- [zsh でも anything.el っぽいの - memo](http://u7fa9.org/memo/HEAD/archives/2011-02/2011-02-22_1.rst)
+- [nakamuray/zaw - GitHub](https://github.com/nakamuray/zaw)
+- [zshのanything.elやunite.vimっぽい機能を実現するzaw.zshの簡単な紹介と、予めsourceを指定したキーバインドを設定する方法 - kei_qメモ](http://d.hatena.ne.jp/kei_q/20110309/1299681144)
+- [zaw.zshでgit show-branchの出力を眺めつつコミットを選択したい。 - hchbaw記](http://d.hatena.ne.jp/hchbaw/20110302/1299072457)
 
-2. canything
+zsh の魔術(ウィジェット)なのでカスタマイズするのにとっつきにくかった。
 
-   - [canything: CUIでAnything](http://filmlang.org/soft/canything)
-   - [keiji/canything - GitHub](https://github.com/keiji/canything)
-   - `<候補を出力するコマンド> | canything | <絞り込んだ結果を受け取るコマンド>`  
-     という具合に使う
-   - パイプで受け渡しができて使いやすい
-   - 空白をあけて複数の単語で絞り込み、っていう使い方が出来ないのが難点
+設定は、ウィジェットを定義したファイルを source すればOK。
+例えば、
+
+    source path/to/zaw-mendeley.zsh
+
+を `.zshrc` で `zaw.zsh` を source したあとの行に加える。
+
+
+## canything ##
+
+- [canything: CUIでAnything](http://filmlang.org/soft/canything)
+- [keiji/canything - GitHub](https://github.com/keiji/canything)
+
+パイプで受け渡しができて使いやすい
+
+    <候補を出力するコマンド> | canything | <絞り込んだ結果を受け取るコマンド>`
+
+という具合に使える。
+
+ただ、空白をあけて複数の単語で絞り込み、っていう使い方が出来ないのが難点。
+
+使い方は [canything: CUIでAnything](http://filmlang.org/soft/canything) にある。
+例えば、 `.zshrc` で下に書いてある `ja` とか `gy` ようなシェル関数を定義すれば良い。
 
 
 ## Mendeley で管理しているPDFファイルを絞り込んで開く ##
