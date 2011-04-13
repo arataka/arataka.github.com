@@ -22,7 +22,7 @@ title: MercurialやGitのコミット頻度などを可視化するPythonスク�
 [![repo-act-numpy by takafumi_a, on Flickr][fig_img_1]][fig_link_1]
 
 [fig_img_1]: http://farm6.static.flickr.com/5303/5610051566_08c5ca8a96.jpg
-[fig_link_2]: http://www.flickr.com/photos/arataka/5610051566/
+[fig_link_1]: http://www.flickr.com/photos/arataka/5610051566/
 
 ちなみに時刻が並んでいるデータ(点過程って言えば正確かな?)だったら何でもパイプ経由で食わせられるので，他の用途にも使えるはず．
 
