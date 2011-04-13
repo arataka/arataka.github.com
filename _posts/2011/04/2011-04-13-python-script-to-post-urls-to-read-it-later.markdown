@@ -50,4 +50,5 @@ URLのあとにスペースを空ければタイトルも入れられる:
 
 ## `ril.py` の中身 ##
 
-<script src="https://gist.github.com/915752.js?file=ril.py"></script>
+<script src="https://gist.github.com/915752.js?file=ril.py">
+</script>

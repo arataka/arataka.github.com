@@ -105,4 +105,5 @@ git log --format='%at' | datehist.py -t `git rev-parse --show-toplevel`
 [tkf's gist: 913543 — Gist](https://gist.github.com/913543)
 にあげときます．
 
-<script src="https://gist.github.com/913543.js?file=datehist.py"></script>
+<script src="https://gist.github.com/913543.js?file=datehist.py">
+</script>
