@@ -1,11 +1,11 @@
 ---
 layout: post
-title: GithubのJekyllでLaTeX数式が出せるか試す
+title: GithubのJekyllでLaTeX数式が出せるか試してみたけど出来なかった
 ---
 
 # {{ page.title }} #
 
-Example: $x^{n}+y^{n} \neq z^{n}$ for $n \geq 3$
+$x^{n}+y^{n} \neq z^{n}$ for $n \geq 3$
 
 \[ 
 \sum_{n=1}^\infty \frac{1}{n} 
@@ -14,3 +14,5 @@ Example: $x^{n}+y^{n} \neq z^{n}$ for $n \geq 3$
 \]
 
 $$ \beth \Subset \bigtriangleup \bumpeq \ggg \pitchfork $$ 
+
+... できない
