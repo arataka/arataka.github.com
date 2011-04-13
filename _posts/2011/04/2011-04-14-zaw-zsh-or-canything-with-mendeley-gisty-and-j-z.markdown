@@ -5,26 +5,30 @@ title: Anything.elライクなCUIのzaw.zshやcanythingをMendeleyやgistyやz(�
 
 # {{ page.title }} #
 
-[![zaw-mendeley.gif][fig_img_1]][fig_link_1]
+[![zaw.zsh で Mendely で管理している論文PDFを選んでいる様子][
+fig_img_1]][fig_link_1]
 
 [fig_img_1]: https://lh5.googleusercontent.com/_SAwQBQ7QF-E/TaXBwp6tnKI/AAAAAAAAAZw/D4aXfeWLKKg/s800/zaw-mendeley.gif
 [fig_link_1]: https://picasaweb.google.com/lh/photo/j39yVxLpdSRnq_vXG17k8w?feat=embedwebsite
 
-* zaw.zsh
+シェル環境で使える anything.el ライクな環境はふたつ(もっとあるかも?)ある:
 
-  - [zsh でも anything.el っぽいの - memo](http://u7fa9.org/memo/HEAD/archives/2011-02/2011-02-22_1.rst)
-  - [nakamuray/zaw - GitHub](https://github.com/nakamuray/zaw)
-  - [zshのanything.elやunite.vimっぽい機能を実現するzaw.zshの簡単な紹介と、予めsourceを指定したキーバインドを設定する方法 - kei_qメモ](http://d.hatena.ne.jp/kei_q/20110309/1299681144)
-  - [zaw.zshでgit show-branchの出力を眺めつつコミットを選択したい。 - hchbaw記](http://d.hatena.ne.jp/hchbaw/20110302/1299072457)
-  - zsh の魔術(ウィジェット)なのでカスタマイズするのにとっつきにくかった
+1. zaw.zsh
 
-* canything
+   - [zsh でも anything.el っぽいの - memo](http://u7fa9.org/memo/HEAD/archives/2011-02/2011-02-22_1.rst)
+   - [nakamuray/zaw - GitHub](https://github.com/nakamuray/zaw)
+   - [zshのanything.elやunite.vimっぽい機能を実現するzaw.zshの簡単な紹介と、予めsourceを指定したキーバインドを設定する方法 - kei_qメモ](http://d.hatena.ne.jp/kei_q/20110309/1299681144)
+   - [zaw.zshでgit show-branchの出力を眺めつつコミットを選択したい。 - hchbaw記](http://d.hatena.ne.jp/hchbaw/20110302/1299072457)
+   - zsh の魔術(ウィジェット)なのでカスタマイズするのにとっつきにくかった
 
-  - [canything: CUIでAnything](http://filmlang.org/soft/canything)
-  - [keiji/canything - GitHub](https://github.com/keiji/canything)
-  - パイプで受け渡しができて使いやすい
-  - `<候補を出力するコマンド> | canything | <絞り込んだ結果を受け取るコマンド>`  
-    という具合に使う
+2. canything
+
+   - [canything: CUIでAnything](http://filmlang.org/soft/canything)
+   - [keiji/canything - GitHub](https://github.com/keiji/canything)
+   - `<候補を出力するコマンド> | canything | <絞り込んだ結果を受け取るコマンド>`  
+     という具合に使う
+   - パイプで受け渡しができて使いやすい
+   - 空白をあけて複数の単語で絞り込み、っていう使い方が出来ないのが難点
 
 
 ## Mendeley で管理しているPDFファイルを絞り込んで開く ##
@@ -38,6 +42,9 @@ title: Anything.elライクなCUIのzaw.zshやcanythingをMendeleyやgistyやz(�
 <script src="https://bitbucket.org/tkf/zaw-sources/src/tip/zaw-mendeley.zsh?embed=t">
 </script>
 
+→
+[Bitbucket で `zaw-mendeley.zsh` のソースを見る](https://bitbucket.org/tkf/zaw-sources/src/tip/zaw-mendeley.zsh)
+
 
 ## gisty で管理しているリポジトリのワーキングディレクトリに一覧から選んで移動 ##
 
@@ -49,6 +56,9 @@ title: Anything.elライクなCUIのzaw.zshやcanythingをMendeleyやgistyやz(�
 
 <script src="https://bitbucket.org/tkf/zaw-sources/src/tip/zaw-gisty.zsh?embed=t">
 </script>
+
+→
+[Bitbucket で `zaw-gisty.zsh` のソースを見る](https://bitbucket.org/tkf/zaw-sources/src/tip/zaw-gisty.zsh)
 
 canything バージョン:
 
@@ -70,7 +80,7 @@ gy(){
 
 ## z (もしくはj) を使って、よく使うディレクトリへ一覧から選んで移動 ##
 
-z/j よく行くディレクトリに一発でジャンプできるコマンド。
+z/j はよく行くディレクトリに一発でジャンプできるコマンド。
 過去に行ったディレクトリを記録しててくれて、その頻度からジャンプ先を勝手に選んでくれる。
 例えば、 `~/repos/arataka.github.com/` なるディレクトリでよく作業をしているなら、 `z arataka` とやれば一発でそこに行ける。
 このコマンドにも anything ライクに使えるようにした。
@@ -84,10 +94,13 @@ z が最新バージョンで、特別な設定なしでも zsh で使えるの�
 
 [zaw.zshでディレクトリスタックを選択したい。 - hchbaw記](http://d.hatena.ne.jp/hchbaw/20110224/zawzsh)
 とやりたいことは似ているけど、ディレクトリスタックだとそのセッション以外で行ったディレクトリにアクセス出来ないのが難点。
-まあ使い分けていけば良いと思う。
+z/j だと過去に行ったディレクトリならどこへでも行けるし、よく使うものほど上に来るので使いやすいと思う。
 
 <script src="https://bitbucket.org/tkf/zaw-sources/src/tip/zaw-z.zsh?embed=t">
 </script>
+
+→
+[Bitbucket で `zaw-z.zsh` のソースを見る](https://bitbucket.org/tkf/zaw-sources/src/tip/zaw-z.zsh)
 
 canything バージョン:
 
