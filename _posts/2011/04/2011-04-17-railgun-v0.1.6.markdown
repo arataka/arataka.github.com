@@ -1,0 +1,37 @@
+---
+layout: post
+title: PythonとCで数値計算をやる人のためのライブラリ RailGun v0.1.6 をリリースしてついでに日本語ドキュメントを充実させました
+---
+
+# {{ page.title }} #
+
+RailGun ってなんだ、っ人てはとりあず
+[ドキュメント](http://tkf.bitbucket.org/railgun-doc-ja/index.html)
+の一番上にある例を見てみて下さい!
+
+色々と機能が強化されています:
+
+* メモリのアロケーションをC拡張で書き直してかなり高速化されました。
+* Cの構造体メンバと関数をグループ分け(サブセット)出来るようにしました。
+  これで、デバッグ用のみに巨大な配列を用意したいけど普段はそんなにメモリ
+  使いたくない! みたいなケースに対応出来ます。
+* Cの構造体のメンバに別の(あるいは自分の)構造体またはそのポインタを
+  使えるようになりました。これでかなり自由度が上がったはずです。
+* [日本語ドキュメント](http://tkf.bitbucket.org/railgun-doc-ja/index.html)
+  を充実させました。
+
+ドキュメントは、分かりにくい所が多いのでサンプルを増やしていきたいです。
+Matplotlib の sphinx 拡張を使って自動的にサンプルページにグラフを埋め込める
+ようになった
+([Samples --- RailGun documentation](http://tkf.bitbucket.org/railgun-doc/samples/index.html))
+のが楽しいので、にこれからどんどん追加されていく、はず。
+
+ご意見・バグレポート等あればコメントまで!!
+
+リンク:
+
+* [RailGunのドキュメントへようこそ! --- RailGun documentation](http://tkf.bitbucket.org/railgun-doc-ja/index.html)
+* [Welcome to RailGun’s documentation! --- RailGun documentation](http://tkf.bitbucket.org/railgun-doc/index.html)
+* [tkf / railgun / source – Bitbucket](https://bitbucket.org/tkf/railgun/src)
+* [tkf / railgun / issues – Bitbucket](https://bitbucket.org/tkf/railgun/issues) (バグ報告)
+* [Python Package Index : railgun](http://pypi.python.org/pypi/railgun/)
