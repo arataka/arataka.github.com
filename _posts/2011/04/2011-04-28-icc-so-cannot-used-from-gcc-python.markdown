@@ -31,7 +31,7 @@ prefix オプションで違う場所にインストールする感じになる�
 
 1. gcc とは関係なく実行出来るはずの pypy がなんで C のライブラリを読み込む ctypes を実装出来ているのか。
    ([PyPy’s ctypes implementation — PyPy v1.5-alpha documentation](http://codespeak.net/pypy/dist/pypy/doc/ctypes-implementation.html))
-2. gcc とは関係なく実行出来るはずの Haskell のライブラリを Python の ctypes から読み込むことが出来るのか。
+2. gcc とは関係なく実行出来るはずの Haskell のライブラリを Python の ctypes から読み込むことが出来るのはなぜか。
    ([PythonVsHaskell - PythonInfo Wiki](http://wiki.python.org/moin/PythonVsHaskell))
 
 [ELF](http://ja.wikipedia.org/wiki/Executable_and_Linkable_Format) やら
