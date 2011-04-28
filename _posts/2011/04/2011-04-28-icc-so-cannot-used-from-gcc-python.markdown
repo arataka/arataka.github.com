@@ -7,7 +7,7 @@ title: icc でコンパイルした共有ライブラリって gcc でコンパ�
 
 つまり普通の gcc でコンパイルされた Python からは、拡張モジュールとしても ctypes を通しても使えないってことかー!
 
-... という訳で、[昨日悩んでいた問題](strange-ctypes-icc-segfault.html)は解決してしまった模様。
+... という訳で、[昨日悩んでいた問題](../27/strange-ctypes-icc-segfault.html)は解決してしまった模様。
 [numpy - Segfault occurs when my shared library is optimized by icc -O3 or -O2 and used via Python ctypes - Stack Overflow](http://stackoverflow.com/questions/5809337/segfault-occurs-when-my-shared-library-is-optimized-by-icc-o3-or-o2-and-used-vi)
 で質問したらtalonmiesさんという方が瞬殺してくれました。ありがとう!
 Stack Overflow 初めて使ったけど、良いシステムですね。
