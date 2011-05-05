@@ -5,9 +5,12 @@ title: ナンクル力学系
 
 <div id="home">
   <h1>Blog Posts</h1>
-  <ul class="posts">
+  <table class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <tr>
+      <td class="date"><span>{{ post.date | date_to_string }}</span> &raquo;</td>
+      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+    </tr>
     {% endfor %}
-  </ul>
+  </table>
 </div>
