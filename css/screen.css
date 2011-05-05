@@ -170,6 +170,7 @@ ul.posts {
   #post pre {
     border: 1px solid #ddd;
     background-color: #eef;
+    font-size: 85%;
     padding: 0 .4em;
   }
 
@@ -188,6 +189,10 @@ ul.posts {
     #post pre code {
       border: none;
     }
+
+  #post h1, #post h2, #post h3, #post h4, #post h5, #post h6 {
+    margin-top: 2em;
+  }
 
   /* terminal */
 
