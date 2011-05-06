@@ -56,7 +56,7 @@ def test_divide():
 
 もうちょい詳しい情報が知りたいなら、 `--npe-all=warn` を使います。
 
-    nosetests --npe-all=warn test_divide.py
+    % nosetests --npe-all=warn test_divide.py
     test_divide.py:4: RuntimeWarning: divide by zero encountered in divide
       1.0 / numpy.array([0])
     .
