@@ -10,14 +10,14 @@ MathJax は、
 
     $$
       I(t) := \lim_{\Delta t \to 0} \frac{1}{\Delta t}
-      \int_{t}^{\Delta t} J \sum_{f} \delta(s - t^{(f)}) ds
+      \int_{t}^{t+\Delta t} J \sum_{f} \delta(s - t^{(f)}) ds
     $$
 
 と書くと
 
 $$
   I(t) := \lim_{\Delta t \to 0} \frac{1}{\Delta t}
-  \int_{t}^{\Delta t} J \sum_{f} \delta(s - t^{(f)}) ds
+  \int_{t}^{t+\Delta t} J \sum_{f} \delta(s - t^{(f)}) ds
 $$
 
 が表示されるライブラリー!!
