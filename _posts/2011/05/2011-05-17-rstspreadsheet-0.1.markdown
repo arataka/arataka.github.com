@@ -5,7 +5,7 @@ title: Sphinx/Docutils で表計算をするための拡張 reStructuredSpreadsh
 
 # {{ page.title }} #
 
-[Python Package Index : rstspreadsheet 0.1](http://pypi.python.org/pypi/rstspreadsheet/0.1)
+[Python Package Index : rstspreadsheet](http://pypi.python.org/pypi/rstspreadsheet/)
 にあります。
 ここに書いてある例が出来ることのすべてです。
 セルの値を計算する式は Python で書きます。
