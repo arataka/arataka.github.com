@@ -8,7 +8,9 @@ title: Sphinx/Docutils で表計算をするための拡張 reStructuredSpreadsh
 [Python Package Index : rstspreadsheet 0.1](http://pypi.python.org/pypi/rstspreadsheet/0.1)
 にあります。
 ここに書いてある例が出来ることのすべてです。
-エラー処理をまったくやっていないので注意して使ってね☆(ぉ
+セルの値を計算する式は Python で書きます。
+なので、 Python で出来ることは全てできます!!
+ただしエラー処理をまったくやっていないので注意して使ってね☆(ぉ
 
 (危なっかしいのでちゃんとエラー処理してくれ...とか要望あればコメントください。)
 
