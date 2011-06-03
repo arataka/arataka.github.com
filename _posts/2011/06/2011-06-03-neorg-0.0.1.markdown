@@ -1,0 +1,181 @@
+---
+layout: post
+title: 実験データの整理用 wiki NEOrg v0.0.1 をリリースしました
+---
+
+# {{ page.title }} #
+
+[![neorg-normal-page by takafumi_a, on Flickr
+](http://farm6.static.flickr.com/5261/5792936436_f8826c97e6_z.jpg)
+][http://www.flickr.com/photos/arataka/5792936436/]
+
+[Python Package Index : neorg](http://pypi.python.org/pypi/neorg/0.0.1)
+からインストール出来ます。
+まだまだかなりバギーなアルファ版ですが、私が使ってる限りバグは減っていく(はず)です。
+
+NEOrg (Numerical Simulation Organizer) は reStructuredText で書ける wiki です。
+(reStructuredText については
+[reStructuredText - Wikipedia](http://ja.wikipedia.org/wiki/ReStructuredText)
+を見てください。
+[Sphinx](http://sphinx.shibu.jp/)
+のマークアップに使われてることで有名です。)
+
+reStructuredText にはディレクティブという特殊なマークアップがあります。
+こんな感じです。
+{% highlight rst %}
+.. directive-name:: argument(s)
+   :option: parameter
+   :another_option: another_parameter
+{% endhighlight %}
+NEOrg は reStructuredText の基本的なディレクティブ以外に
+特別なディレクティブを定義することで、
+実験データを効率的に整理出来るようにしました。
+
+
+## サンプルに使ったなんちゃって実験データ ##
+
+リサージュ曲線の x 軸周期, y 軸周期, 位相差を変えたグラフとそのグラフを
+書くために使ったパラメタが
+
+    lissajous/
+     |-- period_x_0.20_period_y_0.20_phase_0.10/
+     |   |-- data.yml
+     |   `-- fig.png
+     |-- period_x_0.20_period_y_0.20_phase_0.15/
+     |   |-- data.yml
+     |   `-- fig.png
+     ...
+
+というディレクトリ構成で保存されています。
+
+
+## パラメタに沿って結果のグラフを並べる - `grid-images` ##
+
+`grid-images` ディレクティブを使えばパラメタに沿って実験結果の画像を
+並べることが出来ます。
+
+[![neorg-grid-images by takafumi_a, on Flickr
+](http://farm6.static.flickr.com/5029/5792371931_ab3bfe79bf_z.jpg)
+][http://www.flickr.com/photos/arataka/5792371931/]
+
+この表は、こんなふうに `grid-images` ディレクティブを使って出力しました。
+{% highlight rst %}
+.. grid-images:: *_phase_0.25/*.yml
+   :base: lissajous
+   :image: fig.png
+   :param: period_x period_y
+{% endhighlight %}
+データを保存しているディレクトリから `lissajous/*_phase_0.25/*.yml`
+にマッチするファイルを選んできて、 `period_x` と `period_y`
+を使ってソートし、同じディレクトリにある `fig.png` を表示しています。
+
+ちなみに、パラメタは3種類以上選ぶことも可能で、こんな感じで入れ子になった
+表として表示されます:
+
+[![neorg-grid-images by takafumi_a, on Flickr
+](http://farm4.static.flickr.com/3127/5792371793_dcff925c02.jpg)
+][http://www.flickr.com/photos/arataka/5792371793/]
+
+ソース:
+{% highlight rst %}
+.. grid-images:: */*.yml
+   :base: lissajous
+   :image: fig.png
+   :param: period_x period_y phase
+{% endhighlight %}
+
+(一番右の入れ子になった表が少し小さくなってしまうのは
+CSS どこかでミスってるからですね。 どこだろう...)
+
+
+## 結果のグラフとデータを一緒に並べる - `table-data-and-image` ##
+
+実験に使ったパラメタと結果を一緒に見たい時ってありますよね。
+そういう時に使うディレクティブです。
+
+[![neorg-table-data-and-image by takafumi_a, on Flickr
+](http://farm6.static.flickr.com/5103/5792372055_8bd35bb9a6_z.jpg)
+][http://www.flickr.com/photos/arataka/5792372055/]
+
+ソース:
+{% highlight rst %}
+.. table-data-and-image:: *_period_y_0.20_phase_0.25/*.yml
+   :base: lissajous
+   :image: fig.png
+   :data: *
+   :sort: period_x
+   :image-width: 0:150px
+   :widths: 6 1
+   :link: %(relpath)s
+{% endhighlight %}
+データを保存しているディレクトリから
+`lissajous/*_period_y_0.20_phase_0.25/*.yml` にマッチするファイルを
+探してきて、全てのデータを表示し(`:data: *`)、同時に同ディレクトリ下
+にある `fig.png` というファイルを表示しています。
+
+
+## データファイルの差分を表示する - `dictdiff` ##
+
+実験したのは良いけどどのパラメタを変えたんだっけ、って場合があります
+よね。
+そういう時に一発で分かるように差分のみを出力するディレクティブです。
+
+[![neorg-dictdiff by takafumi_a, on Flickr
+](http://farm6.static.flickr.com/5228/5792371655_dc2a7ed934_z.jpg)
+][http://www.flickr.com/photos/arataka/5792371655/]
+
+ソース:
+{% highlight rst %}
+.. dictdiff:: *_phase_0.25/*.yml
+   :base: lissajous
+   :sort: phase_x phase_y
+   :exclude: datadir
+{% endhighlight %}
+データファイルを保存しているディレクトリから
+`lissajous/*_phase_0.25/*.yml` にマッチするファイルを
+探してきて、 `datadir` 以外のキーで異なる値を持つデータを、
+`phase_x` と `phase_y` でソートして表示しています。
+
+
+## テンプレートページ ##
+
+ディレクティブ以外の NEOrg の重要な機能にテンプレートページがあります。
+テンプレートページとはそのURLに `_temp_` を含むページです。
+例えば、
+
+    /my/page/_temp_/
+
+はテンプレートページで、
+
+    /my/page/2011-06-03-094741/
+
+という URL でアクセスすると、自動的に `/my/page/_temp_/` が呼び出されて
+新しいページが動的に生成されます。
+生成されたページは、例えばこんな感じになります:
+
+[![neorg-template-page by takafumi_a, on Flickr
+](http://farm6.static.flickr.com/5264/5792376775_37dd9714a3_b.jpg)
+][http://www.flickr.com/photos/arataka/5792376775/]
+
+このページは、 `lissajous/period_x_0.50_period_y_0.20_phase_0.25/`
+にアクセスした時にテンプレートページ `lissajous/_temp_/`
+から生成されました。
+テンプレートページの中身は以下です。
+{% highlight rst %}
+Result of ``{{ "{{ args[0]"}} }}``
+==============================================================
+
+.. table-data:: {{ path }}/*.yml
+   :data: *
+   :trans:
+
+.. find-images:: *.png
+   :base: {{ "{{ path"}} }}
+{% endhighlight %}
+ソース中にある `{{ "{{ args[0]"}} }}` と `{{ "{{ path"}} }}`
+は、ページが生成される時に
+
+    {{ "{{ args[0]"}} }} --> period_x_0.50_period_y_0.20_phase_0.25
+    {{ "{{ path"}} }}    --> lissajous/period_x_0.50_period_y_0.20_phase_0.25/
+
+のように置換され、上のようなページが表示されます。
