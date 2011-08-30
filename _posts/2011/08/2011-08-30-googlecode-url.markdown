@@ -45,7 +45,15 @@ CA certificate 関連だと、この辺
 
     https://code.google.com/p/XXX/
 
-に変わっていたのが原因。
+に変わっていたのが原因。なので、 `.hgsub` の
+
+    XXX = https://XXX.googlecode.com/hg
+
+の行を
+
+    XXX = https://code.google.com/p/XXX/
+
+に変更すればOK!
 
 なんて分かりにくいエラーメッセージなんだ...
 そして google code はいつの間に URL 変わったんだ...
