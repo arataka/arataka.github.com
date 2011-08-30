@@ -204,6 +204,11 @@ table.posts {
       padding: 5px;
   }
 
+  #post > blockquote {
+      color: gray;
+  }
+
+
   /* terminal */
 
   #post pre.terminal {
