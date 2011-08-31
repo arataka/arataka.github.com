@@ -13,7 +13,7 @@ title: 8月は少し広めに勉強していたので読んだ本をまとめる
 
 [![Thermodynamics of Chaotic Systems: An Introduction (Beck & Schlögl)
 ](http://ec2.images-amazon.com/images/I/41MFK9QG4WL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA240_SH20_OU09_.jpg)
-][http://www.amazon.co.jp/gp/product/0521484510?ie=UTF8&amp;tag=toshouldeofgi-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=0521484510]
+](http://www.amazon.co.jp/gp/product/0521484510?ie=UTF8&amp;tag=toshouldeofgi-22&amp;linkCode=as2&amp;camp=247&amp;creative=7399&amp;creativeASIN=0521484510)
 
 詳しくは
 [SRB測度と自然不変測度の関係を初等的な数学で(略)
@@ -27,7 +27,7 @@ title: 8月は少し広めに勉強していたので読んだ本をまとめる
 
 [![Statistical Physics of Spin Glasses Information Processing (Nishimori)
 ](http://ec2.images-amazon.com/images/I/41-WdI8q62L._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU09_.jpg)
-][http://www.amazon.co.jp/gp/product/0198509413/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0198509413]
+](http://www.amazon.co.jp/gp/product/0198509413/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0198509413)
 ![](http://www.assoc-amazon.jp/e/ir?t=&l=as2&o=9&a=0198509413)
 
 この本は、ラボの理論系セミナーで出てきた replica trick
@@ -58,7 +58,7 @@ online book。
 
    [![Equilibrium States and the Ergodic Theory of Anosov Diffeomorphisms (Bowen)
    ](http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=3540776052&MarketPlace=JP&ID=AsinImage&WS=1&tag=toshouldeofgi-22&ServiceVersion=20070822)
-   ][http://www.amazon.co.jp/gp/product/3540776052/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=3540776052]
+   ](http://www.amazon.co.jp/gp/product/3540776052/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=3540776052)
    ![](http://www.assoc-amazon.jp/e/ir?t=&l=as2&o=9&a=3540776052)
 
 2. 数学が激しすぎるな... weak-* topology てなんぞー。
@@ -68,7 +68,7 @@ online book。
 
    [![I: Functional Analysis (Reed & Simon)
    ](https://images-na.ssl-images-amazon.com/images/I/51QwEU2KgbL._SL100_.jpg)
-   ][http://www.amazon.co.jp/gp/product/0125850506/ref=as_li_ss_tl?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0125850506]
+   ](http://www.amazon.co.jp/gp/product/0125850506/ref=as_li_ss_tl?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0125850506)
    ![](http://www.assoc-amazon.jp/e/ir?t=&l=as2&o=9&a=0125850506)
 
 4. Preliminaries が読めない><!
@@ -112,7 +112,7 @@ online book。
 
 [![Real analysis (Royden)
 ](http://ec5.images-amazon.com/images/I/51a6UkXXYbL._SL500_AA300_.jpg)
-][http://www.amazon.co.jp/gp/product/0135113555/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0135113555]
+](http://www.amazon.co.jp/gp/product/0135113555/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0135113555)
 ![](http://www.assoc-amazon.jp/e/ir?t=&l=as2&o=9&a=0135113555)
 
 この本は3章くらいピックアップして読んで、 Bowen 本に挑戦しようと
@@ -132,7 +132,7 @@ online book。
 
 [![確率と確率過程の基礎 (森 真)
 ](http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=432001717X&MarketPlace=JP&ID=AsinImage&WS=1&tag=toshouldeofgi-22&ServiceVersion=20070822)
-][http://www.amazon.co.jp/gp/product/432001717X/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=432001717X]
+](http://www.amazon.co.jp/gp/product/432001717X/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=432001717X)
 ![](http://www.assoc-amazon.jp/e/ir?t=&l=as2&o=9&a=432001717X)
 
 決定論的な系はまあまあ勉強していたけど確率過程は苦手だった
@@ -189,7 +189,7 @@ Maxwell's Demon: Entropy, Information, Computing (H. S. Leff)
 
 [![Maxwell's Demon: Entropy, Information, Computing (H. S. Leff)
 ](http://ws.assoc-amazon.jp/widgets/q?_encoding=UTF8&Format=_SL110_&ASIN=0750300574&MarketPlace=JP&ID=AsinImage&WS=1&tag=toshouldeofgi-22&ServiceVersion=20070822)
-][http://www.amazon.co.jp/gp/product/0750300574/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0750300574]
+](http://www.amazon.co.jp/gp/product/0750300574/ref=as_li_ss_il?ie=UTF8&tag=toshouldeofgi-22&linkCode=as2&camp=247&creative=7399&creativeASIN=0750300574)
 ![](http://www.assoc-amazon.jp/e/ir?t=&l=as2&o=9&a=0750300574)
 
 からの孫引きです。
