@@ -5,6 +5,28 @@ title: hg out で待たされるのが苦痛なのでローカルにキャッシ
 
 # {{ page.title }} #
 
+
+## `hg out` の不満点 ##
+
+Git より Mercurial のほうが好きだけど、 Git のほうが勝っていると
+感じる点は、この `git status` の出力。
+これ、今まで何を push したかローカルリポジトリが覚えているらしく、
+origin/master にアクセスせずにこの出力を返してくれる。
+
+    % git status
+    # On branch master
+    # Your branch is ahead of 'origin/master' by 1 commit.
+    #
+    nothing to commit (working directory clean)
+
+Mercurial で同じ事をするには `hg out` を使うんだけど、これは
+行き先のリポジトリにアクセスしているっぽいので非常にまたされる。
+確かにそのほうが正確な結果が分かるかもしれないけど、てっとり
+早く答えが知りたいときもあるじゃん!! という訳で書いた。
+
+
+## インストール/使い方 ##
+
 [tkf / hgcachedoutgoing / overview — Bitbucket
 ](https://bitbucket.org/tkf/hgcachedoutgoing/)
 から
@@ -24,10 +46,12 @@ title: hg out で待たされるのが苦痛なのでローカルにキャッシ
 と打つと、 push しなければいけない change set があるかどうか教えてくれる。
 デフォルトの path がどこかのリモートマシーンの場合、一度目はそこにアクセス
 するので遅いけど、二度目からはキャッシュを使うので、一瞬で結果が出るはず。
+`hg push` する度にキャッシュを更新する hook を勝手に加える仕様なので、
+一人で使うようのリポジトリとかだとほぼ `hg out` の代わりに使えるんじゃないで
+しょうか。
 
 初めての Mercurial 拡張なのと、リポジトリを見れば分かるけどテストが
 皆無なのでバグが結構あるはず。
-
 
 参考:
 
