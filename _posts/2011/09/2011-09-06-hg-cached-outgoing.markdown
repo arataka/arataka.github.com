@@ -10,14 +10,16 @@ title: hg out で待たされるのが苦痛なのでローカルにキャッシ
 
 Git より Mercurial のほうが好きだけど、 Git のほうが勝っていると
 感じる点は、この `git status` の出力。
-これ、今まで何を push したかローカルリポジトリが覚えているらしく、
-origin/master にアクセスせずにこの出力を返してくれる。
 
     % git status
     # On branch master
     # Your branch is ahead of 'origin/master' by 1 commit.
     #
     nothing to commit (working directory clean)
+
+この出力を見れば、 push する必要があるかどうか一目瞭然で素晴らしい。
+しかもこれ、今まで何を push したかローカルリポジトリが覚えているらしく、
+origin/master にアクセスせずにこの出力を返してくれる。
 
 Mercurial で同じ事をするには `hg out` を使うんだけど、これは
 行き先のリポジトリにアクセスしているっぽいので非常にまたされる。
